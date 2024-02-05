@@ -3,7 +3,11 @@ import React from 'react'
 import './Registerform.css'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { Avatar } from '@mui/material';
+import { Avatar} from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+
+
+
 // import axios from 'axios';
 
 
@@ -20,10 +24,13 @@ const validationSchema = Yup.object().shape({
   });
 
   export default function Registerform() {
+    const Navigate = useNavigate()
     const onSubmit = (values) => {
       console.log(values);
-    };
+       Navigate('/')
+      };
 
+  
     // const onSubmit = async (values) => {
     //     try {
     //       const response = await axios.post('https://6594e34f04335332df819ddb.mockapi.io/employee', values);
