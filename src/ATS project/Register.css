@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     font-family:'Times New Roman', Times, serif;
@@ -22,16 +22,16 @@ h2{
 }
 .error{
   color: red;
-}
+} 
 body{
-  background: #0f0c29;  /* fallback for old browsers */
-  margin: 70px 100px;
+  background: #0f0c29;  
+  margin: 70px 100px; 
   
   /* margin-left: 100px; */
-  background: -webkit-linear-gradient(to right, #2222d2, #1e0fcd, #230de0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #631459, #4a104a, #451245); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #2222d2, #1e0fcd, #230de0);  
+  background: linear-gradient(to right, #631459, #4a104a, #451245); 
   
-}
+} 
 
 /* .App {
   height: 100vh;
@@ -107,4 +107,4 @@ body{
     display: initial;
   }
 }
-
+  
