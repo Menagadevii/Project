@@ -1,6 +1,6 @@
 import React from 'react'
 import reg from'../Assets/reg.jpg';
-// import { useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import './Register.css'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';

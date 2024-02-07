@@ -17,15 +17,16 @@ h2{
   font-size: large;
 }
 .avatar{
-   /* padding: 10px; */
+   /* padding: 30px; */
    width: 130px;
   height: 300px;
   margin-left: 130px;
+
   }
 .error{
   color: red;
 }
-.register{
+.register1{
     /* margin: 50px; */
   max-width: 978px;
   width: 100vw;
@@ -33,9 +34,10 @@ h2{
   /* border: 1px solid #e9ecef;  */
   /* border-radius: 5px;   */
    background-color: white; 
+   position: fixed;
 }
 
-.register span{
+.register1 span{
   color: #adb5bd;
 } 
 
@@ -72,19 +74,20 @@ h2{
   flex-direction: column;
 }  
 
-.register .col-2{
+.register1 .col-2{
   margin: 150px;
   padding: 3em 0;
   
 } 
 
-.register .col-1 img{
+.register1 .col-1 img{
   width: 700px;
   margin: 0px;
+  height: 620px;
 }
 
 @media screen and (min-width: 800px)  {
-  .register .col-1 img{
+  .register1 .col-1 img{
     display: initial;
   }
 }

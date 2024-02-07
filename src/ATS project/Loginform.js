@@ -5,6 +5,7 @@ import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Avatar, Typography ,Link} from '@mui/material';
 import {  useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 
 
@@ -21,17 +22,23 @@ const validationSchema = Yup.object().shape({
 
   export default function Loginform() {
     const Navigate = useNavigate()
-    const onSubmit = (values) => {
-      console.log(values);
-      Navigate('/Home')
+    const onSubmit = async (values) => {
+      try {
+        const url = `https://6594e34f04335332df819ddb.mockapi.io/employee/login?email=${values.email}&password=${values.password}`;
+        const response = await axios.get(url);
+        console.log(response.data);
+        // Navigate('/Home');
+      } catch (error) {
+        console.error('Login failed:', error);
+      }
     };
-
+    // const onSubmit = (values) => {
+    //   console.log(values);
+    //   Navigate('/Home')
+    // }
     let Hii =()=>{
-      Navigate('/Registerform')
+       Navigate('/Registerform')
     }
-
-    
-
 
     // const onSubmit = async (values) => {
     //     try {
@@ -44,7 +51,7 @@ const validationSchema = Yup.object().shape({
   
     return (
       <section>
-        <div className="register">
+        <div className="register1">
         <div className="col-1">
             <img src='image/ATS1.jpg' alt="ATS" />
           </div>
@@ -96,7 +103,7 @@ const validationSchema = Yup.object().shape({
                   <Link onClick={Hii}>
                      Register
                   </Link>
-                </Typography>
+                </Typography> 
               </Form>
             </Formik>
           </div>
